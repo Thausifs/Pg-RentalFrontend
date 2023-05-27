@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/Gilroy-Bold.ttf");
+}
+@font-face {
+  font-family: "Lemon Juice";
+  src: url("/fonts/Lemon Juice.woff");
+}
+.font-Gilroy {
+  font-family: "Gilroy";
+}
+.font-Lemon {
+  font-family: "Lemon Juice";
+}
+.font-Lato {
+  font-family: "Lato", sans-serif;
+}
+.font-ananda {
+  font-family: "Ananda Black", sans-serif;
+}
+.font-work {
+  font-family: "Work Sans", sans-serif;
+}
+
+* {
+  font-family: "Gilroy";
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-style: normal;
+}
+p {
+  font-family: "Lato", sans-serif;
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder,
+button,
+optgroup,
+select,
+textarea {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* root  */
