@@ -54,7 +54,7 @@ export default function Home() {
       <div className="container mt-12">
         <h2 className="xl:text-[6rem] md:text-[4rem] text-[2rem] font-extrabold  text-center md:px-0 sm:px-6 px-[15px]">
           A Place Like{" "}
-          <span className="bg-gradient-to-r font-ananda from-yellow to-green text-transparent bg-clip-text font-extrabold inline-block">
+          <span className="bg-gradient-to-r font-ananda from-yellow to-green bg-clip-text inline-block font-extrabold text-transparent">
             Home
           </span>
         </h2>
@@ -102,7 +102,7 @@ export default function Home() {
                 <div>
                   <img
                     src="/images/home/bang.png"
-                    className="w-full animate-bounce"
+                    className="animate-bounce w-full"
                   />
                 </div>
                 <div>

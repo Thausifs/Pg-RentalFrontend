@@ -14,7 +14,7 @@ const settings = {
 };
 export default function bankcarousel() {
   return (
-    <div className="banner-carousel h-full relative">
+    <div className="banner-carousel relative h-full">
       <Slider {...settings}>
         <div className="banner w-full min-w-full relative text-right max-w-[847px] h-[356px] lg:h-[550px]">
           <div className="banner-text text-left absolute z-10 left-0 md:top-[90px] top-10 max-w-[650px] px-8 lg:top-[71px] xl:px-0 text-black">
@@ -38,7 +38,7 @@ export default function bankcarousel() {
           <div className="banner-img absolute right-0 top-0 w-full h-full lg:w-[515px] lg:rounded-[10px] overflow-hidden">
             <img
               alt=""
-              className="w-full h-full lg:object-auto object-cover"
+              className="lg:object-auto object-cover w-full h-full"
               src="images/home/food.webp"
             />
           </div>
@@ -62,7 +62,7 @@ export default function bankcarousel() {
           <div className="banner-img absolute right-0 top-0 w-full h-full lg:w-[515px] lg:rounded-[10px] overflow-hidden">
             <img
               alt=""
-              className="w-full h-full lg:object-auto object-cover"
+              className="lg:object-auto object-cover w-full h-full"
               src="images/home/food.webp"
             />
           </div>
@@ -86,7 +86,7 @@ export default function bankcarousel() {
           <div className="banner-img absolute right-0 top-0 w-full h-full lg:w-[515px] lg:rounded-[10px] overflow-hidden">
             <img
               alt=""
-              className="w-full h-full lg:object-auto object-cover"
+              className="lg:object-auto object-cover w-full h-full"
               src="images/home/food.webp"
             />
           </div>
@@ -107,7 +107,7 @@ export default function bankcarousel() {
           <div className="banner-img absolute right-0 top-0 w-full h-full lg:w-[515px] lg:rounded-[10px] overflow-hidden">
             <img
               alt=""
-              className="w-full h-full lg:object-auto object-cover"
+              className="lg:object-auto object-cover w-full h-full"
               src="images/home/food.webp"
             />
           </div>
