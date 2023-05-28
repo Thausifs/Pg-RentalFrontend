@@ -8,7 +8,7 @@ function LoginPopup({ open, hidePopup }) {
   return (
     <Transition appear show={open} as={Fragment}>
       <Dialog onClose={hidePopup} className="relative z-[9999]">
-        <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
+        <div className="bg-black/30 fixed inset-0" aria-hidden="true" />
         <div className="fixed inset-0 flex items-center justify-center p-4">
           <Transition.Child
             as={Fragment}
@@ -17,13 +17,11 @@ function LoginPopup({ open, hidePopup }) {
             enterTo="opacity-100 scale-100"
             leave="ease-in duration-200"
             leaveFrom="opacity-100 scale-100"
-            leaveTo="opacity-0 scale-95"
-          >
+            leaveTo="opacity-0 scale-95">
             <Dialog.Panel className="mx-auto max-w-[36rem] w-full relative rounded-2xl bg-white">
               <div
                 className="h-[36px] w-[36px] rounded-full flex items-center cursor-pointer absolute -top-[17px] -right-[11px] justify-center bg-white shadow"
-                onClick={hidePopup}
-              >
+                onClick={hidePopup}>
                 <FiX size={22} className="stroke-black" />
               </div>
               <div className="p-[32px]">
@@ -39,15 +37,22 @@ function LoginPopup({ open, hidePopup }) {
                   />
                 </div>
                 <div className="text-center">
-                  <div className="mx-auto inline-block text-left">
-                    <label className="text-sm font-medium font-Lato mb-1 inline-block">
+                  <div className="block mx-auto text-left">
+                    <label className="font-Lato inline-block mb-1 text-sm font-medium">
                       Enter Otp
                     </label>
-                    <div className="sm:[&_input]:!w-[72px] sm:[&_input]:!h-[72px] [&_input]:!w-[50px] [&_input]:!h-[50px]">
+                    <div className="hidden sm:block sm:[&_input]:!w-[72px] sm:[&_input]:!h-[72px] [&_input]:!w-[50px] [&_input]:!h-[50px]">
                       <OtpInput />
                     </div>
-                    <div className="my-4 mx-auto flex items-center justify-between text-left">
-                      <label className="text-sm font-medium font-Lato mb-1 inline-block">
+                    <div className=" w-full">
+                      <input
+                        type="email"
+                        placeholder="Enter Your PIN"
+                        className="h-[45px] font-Lato placeholder:font-normal sm:hidden rounded-[8px] border outline-0 border-[#D0D5DD] placeholder:text-[#D0D5DD] shadow-sm px-3 flex items-center w-full mb-4"
+                      />
+                    </div>
+                    <div className="flex items-center justify-between mx-auto my-4 text-left">
+                      <label className="font-Lato inline-block mb-1 text-sm font-medium">
                         Recent Otp
                       </label>
                       <h3>123532</h3>
