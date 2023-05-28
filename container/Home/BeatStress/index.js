@@ -5,12 +5,12 @@ export default function BeatStress() {
     AOS.init();
   }, []);
   return (
-    <div className="container-fluid md:mt-28 mt-10 beat-stress">
+    <div className="container-fluid beat-stress pb-32">
       <hr className="mt-20 mb-10 md:hidden" />
       <div className="grid lg:grid-cols-12 items-center">
         <div className="lg:col-span-5">
           <div className="sm:h-[380px] h-full mb-5 flex items-center justify-center text-center">
-            <h3 className="lg:text-[7rem] text-[5rem] text-black/90 lg:leading-[6.5rem] md:leading-[4.5rem] font-bold md:px-12">
+            <h3 className="lg:text-[7rem] md:text-[5rem] text-[2.5rem] text-black/90 lg:leading-[6.5rem] md:leading-[4.5rem] font-bold md:px-12">
               beat the{" "}
               <span className="bg-gradient-to-r from-yellow to-green text-transparent bg-clip-text block">
                 stress

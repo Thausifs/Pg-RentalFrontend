@@ -3,7 +3,7 @@ export default function LiveLoveLife({ visibleSections }) {
     <section className="bg-yellow pt-[10vh]">
       <div className="container md:px-0 px-[15px]">
         <div className="md:w-10/12 mx-auto text-center">
-          <h3 className="md:text-[6rem] text-[4rem] tracking-[.2rem] text-black leading-[5rem] font-bold mb-8 font-Lemon">
+          <h3 className="xl:text-[6rem] sm:text-[5rem] text-[2.5rem] tracking-[.2rem] text-black leading-[5rem] font-bold mb-8 font-Lemon">
             Live, Love & Laugh
           </h3>
           <p className="md:text-[25px] text-[16px] md:leading-[38px] leading-[28px] mb-4 text-black/80 font-normal ">

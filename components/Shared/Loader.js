@@ -2,20 +2,8 @@ const Loader = ({ loading }) => {
   return (
     <>
       {loading && (
-        <div className="preloader">
-          <div id="cupcake" className="box">
-            <span className="letter box">Z</span>
-            <span className="letter box">e</span>
-            <span className="letter box">s</span>
-            <span className="letter box">t</span>
-
-            <div className="cupcakeCircle box">
-              <div className="cupcakeInner box">
-                <div className="cupcakeCore box"></div>
-              </div>
-            </div>
-            <span className="letter box">s</span>
-          </div>
+        <div className="fixed inset-0 bg-black flex items-center justify-center z-50">
+          <img src="/images/home/logo_white.png" className="w-[200px]" />
         </div>
       )}
     </>

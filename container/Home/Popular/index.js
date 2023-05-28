@@ -1,12 +1,5 @@
-import { BsDoorOpenFill, BsGooglePlay } from "react-icons/bs";
-import { SlCalender } from "react-icons/sl";
-import { MdPayments } from "react-icons/md";
-import { SiFoursquarecityguide } from "react-icons/si";
-import { FaAddressCard } from "react-icons/fa";
-import { VscVerifiedFilled } from "react-icons/vsc";
 import { useEffect } from "react";
 import AOS from "aos";
-import { HiOutlineDeviceMobile } from "react-icons/hi";
 export default function Popular() {
   useEffect(() => {
     AOS.init();
@@ -15,7 +8,7 @@ export default function Popular() {
   return (
     <section>
       <div className="container mt-16">
-        <h2 className="xl:text-[6rem] sm:text-[5rem] text-[3rem] font-extrabold  text-center md:px-0 sm:px-6 px-[15px]">
+        <h2 className="xl:text-[6rem] sm:text-[5rem] text-[2.5rem] font-extrabold  text-center md:px-0 sm:px-6 px-[15px]">
           The Zestos{" "}
           <span className="bg-gradient-to-r font-ananda from-yellow to-green text-transparent bg-clip-text font-extrabold inline-block">
             Corner

@@ -16,7 +16,7 @@ export default function App() {
   return (
     <section>
       <div className="container">
-        <h2 className="xl:text-[6rem] sm:text-[5rem] text-[3rem] font-extrabold  text-center md:px-0 sm:px-6 px-[15px]">
+        <h2 className="xl:text-[6rem] sm:text-[5rem] text-[2.5rem] font-extrabold  text-center md:px-0 sm:px-6 px-[15px]">
           One Tap{" "}
           <span className="bg-gradient-to-r font-ananda from-yellow to-green text-transparent bg-clip-text font-extrabold inline-block">
             Solutions

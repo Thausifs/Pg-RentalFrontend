@@ -51,8 +51,8 @@ export default function Home() {
     <div>
       {/* Banner */}
       <Banner />
-      <div className="container mt-12">
-        <h2 className="xl:text-[6rem] md:text-[4rem] text-[2rem] font-extrabold  text-center md:px-0 sm:px-6 px-[15px]">
+      <div className="container">
+        <h2 className="xl:text-[6rem] md:text-[4rem] text-[2.5rem] font-extrabold  text-center md:px-0 sm:px-6 px-[15px]">
           A Place Like{" "}
           <span className="bg-gradient-to-r font-ananda from-yellow to-green bg-clip-text inline-block font-extrabold text-transparent">
             Home
@@ -76,7 +76,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="relative md:mt-[200px] devices">
+      <div className="relative md:pt-[200px] devices overflow-hidden">
         <img
           src="/images/home/device.png"
           className={`2xl:w-[33%] xl:w-[45%] lg:w-[50%] md:w-[60%] sm:w-[65%] w-[90%] absolute transition-all duration-[800ms] z-30 left-1/2 -translate-x-1/2 ${
@@ -89,7 +89,12 @@ export default function Home() {
         />
       </div>
       <Products />
-      <Features visibleSections={visibleSections} />
+      <div className="xl:block hidden">
+        <Features anime="yes" />
+      </div>
+      <div className="xl:hidden block">
+        <Features anime="none" />
+      </div>
       <div className="relative md:mt-[200px] cities-bg flex items-end xl:h-screen sm:h-[700px] h-[500px]">
         <div className="container">
           <div className="grid sm:grid-cols-12 grid-cols-1 !gap-5">
@@ -113,8 +118,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <BeatStress />
       <Testimonials />
+      <BeatStress />
       <App />
       <LiveLoveLife />
       <Popular />

@@ -8,9 +8,12 @@ const OtpInput = () => {
       length={6}
       type="numeric"
       inputMode="number"
-      style={{ display: "flex", columnGap: "8px" }}
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "8px",
+      }}
       inputStyle={{
-        flexGrow: 1,
         width: "72px",
         height: "72px",
         color: "#6469E4",

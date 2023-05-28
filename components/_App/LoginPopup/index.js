@@ -31,24 +31,28 @@ function LoginPopup({ open, hidePopup }) {
                   <input
                     type="email"
                     placeholder="Enter Phone number"
-                    className="h-[45px] rounded-[8px] border outline-0 border-[#D0D5DD] placeholder:text-[#D0D5DD] pllaceholder:font-normal px-3 flex items-center w-full mb-4"
+                    className="h-[45px] rounded-[8px] border outline-0 border-[#D0D5DD] placeholder:text-[#D0D5DD] shadow-sm pllaceholder:font-normal px-3 flex items-center w-full mb-4"
                   />
                   <ButtonTo
                     text="Send Otp"
                     className="bg-green rounded-lg font-medium text-white text-[12px] px-3 py-1 border shadow-lg gap-3 text-center absolute right-1 top-1 bottom-1"
                   />
                 </div>
-                <div className="mb-4 mx-auto">
-                  <label className="text-sm font-medium font-Lato mb-1 inline-block">
-                    Enter Otp
-                  </label>
-                  <OtpInput />
-                </div>
-                <div className="mb-4 mx-auto flex items-center justify-between">
-                  <label className="text-sm font-medium font-Lato mb-1 inline-block">
-                    Recent Otp
-                  </label>
-                  <h3>123532</h3>
+                <div className="text-center">
+                  <div className="mx-auto inline-block text-left">
+                    <label className="text-sm font-medium font-Lato mb-1 inline-block">
+                      Enter Otp
+                    </label>
+                    <div className="sm:[&_input]:!w-[72px] sm:[&_input]:!h-[72px] [&_input]:!w-[50px] [&_input]:!h-[50px]">
+                      <OtpInput />
+                    </div>
+                    <div className="my-4 mx-auto flex items-center justify-between text-left">
+                      <label className="text-sm font-medium font-Lato mb-1 inline-block">
+                        Recent Otp
+                      </label>
+                      <h3>123532</h3>
+                    </div>
+                  </div>
                 </div>
                 <ButtonTo
                   text="Login"

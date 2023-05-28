@@ -47,7 +47,7 @@ export default function Products() {
         viewport={{ once: false, amount: 0.9 }}
         transition={{ staggerChildren: 0.9, duration: 0.9 }}
       >
-        <h2 className="xl:text-[86px] lg:text-[66px] md:text-[56px] sm:text-[46px] text-3xl font-extrabold md:mt-[90px] mt-10 md:mb-[80px] mb-5 text-center leading-[1]">
+        <h2 className="xl:text-[86px] lg:text-[66px] md:text-[56px] sm:text-[46px] text-[2.5rem] font-extrabold md:mt-[90px] mt-10 md:mb-[80px] mb-5 text-center leading-[1]">
           The Comfort of Your{" "}
           <span className="bg-gradient-to-r font-ananda from-yellow to-green text-transparent bg-clip-text font-extrabold inline-block">
             Home
@@ -69,7 +69,7 @@ export default function Products() {
           the amenities you call your own.
         </p>
       </motion.div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  md:gap-8 gap-5">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 md:gap-8 gap-5 md:mt-0 mt-10">
         {data.map((detail, index) => {
           return (
             <motion.div
@@ -79,7 +79,7 @@ export default function Products() {
               transition={{ staggerChildren: 0.9, duration: 0.9 }}
             >
               <div className={`relative `}>
-                <div className="rounded-xl p-3 bg-white md:shadow-none shadow-[0_1px_1rem_#00000026]">
+                <div className="rounded-xl p-3 md:shadow-none shadow-[0_1px_1rem_#00000026]">
                   <Link href="/product-details">
                     <a>
                       <img

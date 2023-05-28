@@ -22,7 +22,7 @@ export default function AutoCompleteBox() {
 
   return (
     <Combobox value={selected} onChange={setSelected}>
-      <div className="grow sm:min-w-0 relative min-w-full mt-1">
+      <div className="grow sm:min-w-0 relative min-w-full">
         <div className="relative w-full overflow-hidden text-left cursor-default">
           <Combobox.Button className="text-left">
             <label className="block truncate text-black text-[15px] font-semibold leading-[21px] sm:pl-3">
@@ -41,7 +41,8 @@ export default function AutoCompleteBox() {
           leave="transition ease-in duration-100"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
-          afterLeave={() => setQuery("")}>
+          afterLeave={() => setQuery("")}
+        >
           <Combobox.Options className="absolute mt-[18px] max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
             {filteredPeople.length === 0 && query !== "" ? (
               <div className="relative px-4 py-2 text-gray-700 cursor-default select-none">
@@ -56,13 +57,15 @@ export default function AutoCompleteBox() {
                       active ? "bg-green/10 text-black" : "text-black/80"
                     }`
                   }
-                  value={person}>
+                  value={person}
+                >
                   {({ selected, active }) => (
                     <>
                       <span
                         className={`block truncate ${
                           selected ? "font-medium" : "font-normal"
-                        }`}>
+                        }`}
+                      >
                         {person.name}
                       </span>
                     </>
