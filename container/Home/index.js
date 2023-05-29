@@ -79,13 +79,13 @@ export default function Home() {
       <div className="relative md:pt-[200px] devices overflow-hidden">
         <img
           src="/images/home/device.png"
-          className={`2xl:w-[33%] xl:w-[45%] lg:w-[50%] md:w-[60%] sm:w-[65%] w-[90%] absolute transition-all duration-[800ms] z-30 left-1/2 -translate-x-1/2 ${
+          className={`2xl:w-[33%] xl:w-[35%] lg:w-[35%] md:w-[38%] sm:w-[34%] w-[34%] absolute transition-all duration-[800ms] z-30 left-1/2 -translate-x-1/2 ${
             visibleSections.includes("devices") ? "bottom-0" : "-bottom-1/2"
           }`}
         />
         <img
           src="/images/home/device_bg.jpeg"
-          className="w-full h-[800px] object-cover"
+          className="object-cover w-full h-full"
         />
       </div>
       <Products />
