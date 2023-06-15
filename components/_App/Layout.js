@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
                 <title>Indice - Directory & Listing React Next Template</title>
             </Head>
 
-            {children}
+            {children }
         </>
     );
 }

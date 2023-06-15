@@ -1,20 +1,22 @@
 import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { HiOutlineChevronDown } from "react-icons/hi";
+import useCities from "../../../utils/Hooks/useCities";
 
-const people = [{ name: "Wade Cooper" }, { name: "Arlene Mccoy" }];
+// const people = [{ name: "Wade Cooper" }, { name: "Arlene Mccoy" }];
 
 export default function SelectListBox() {
-  const [selected, setSelected] = useState(people[0]);
+  const [selected, setSelected] = useState("");
+    const { cities } = useCities();
   return (
     <Listbox value={selected} onChange={setSelected}>
       <div className="relative h-full sm:min-w-[280px] min-w-full">
         <Listbox.Button className="relative w-full cursor-default rounded-[10px] bg-white sm:pl-2 pr-10 text-left h-full">
           <label className="block truncate text-black text-[15px] font-semibold leading-[21px]">
-            Choose Property Type
+            Select City
           </label>
           <span className="block truncate font-normal text-gray-500 text-[14px] font-Lato">
-            {selected.name}
+            {selected?.name}
           </span>
           <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center pr-2">
             <HiOutlineChevronDown size={18} />
@@ -27,7 +29,7 @@ export default function SelectListBox() {
           leaveTo="opacity-0"
         >
           <Listbox.Options className="absolute mt-1 z-10 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-            {people.map((person, personIdx) => (
+            {cities.map((person, personIdx) => (
               <Listbox.Option
                 key={personIdx}
                 className={({ active }) =>
