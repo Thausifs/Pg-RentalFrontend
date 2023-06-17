@@ -2,12 +2,15 @@ import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import useCities from "../../../utils/Hooks/useCities";
+import { useAuthContext } from '../../../contexts/authContext';
 
 // const people = [{ name: "Wade Cooper" }, { name: "Arlene Mccoy" }];
 
 export default function SelectListBox() {
-  const [selected, setSelected] = useState("");
-    const { cities } = useCities();
+  const authContextData = useAuthContext();
+  const [selected, setSelected] = useState("select_city");
+  const { cities } = useCities();
+  authContextData.setselectedcity(selected);
   return (
     <Listbox value={selected} onChange={setSelected}>
       <div className="relative h-full sm:min-w-[280px] min-w-full">

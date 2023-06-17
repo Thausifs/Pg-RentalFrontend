@@ -1,17 +1,19 @@
 import { Fragment, useState } from "react";
 import { Combobox, Transition } from "@headlessui/react";
 import useRoomTypes from "../../../utils/Hooks/useRoomTypes"
-
+import { useAuthContext } from '../../../contexts/authContext';
 // const people = [
 //   { id: 1, name: "Wade Cooper" },
 //   { id: 2, name: "Arlene Mccoy" },
 // ];
 
 export default function AutoCompleteBox() {
-  const [selected, setSelected] = useState("");
+   const authContextData = useAuthContext();
+  const [selected, setSelected] = useState("select_room_type");
   const { roomTypes } = useRoomTypes();
   const [query, setQuery] = useState("");
-
+  
+  authContextData.setselectedroomtype(selected);
   // const filteredPeople =
   //   query === ""
   //     ? people

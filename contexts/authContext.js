@@ -5,6 +5,8 @@ const AuthContext = createContext();
 const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState(undefined);
   const [token, setToken] = useState(undefined);
+  const [selectedcity, setselectedcity] = useState(undefined);
+  const [selectedroomtype, setselectedroomtype] = useState(undefined);
   const getUser = async (token) => {
     try {
       const res = await authApi.getUserDetail(token);
@@ -22,7 +24,7 @@ const AuthContextProvider = ({ children }) => {
     }
   }, []);
   return (
-    <AuthContext.Provider value={{ user, setUser, token, setToken }}>
+    <AuthContext.Provider value={{ user, setUser, token, setToken,selectedcity ,setselectedcity , selectedroomtype , setselectedroomtype }}>
       {children}
     </AuthContext.Provider>
   );

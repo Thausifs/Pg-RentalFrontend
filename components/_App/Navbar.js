@@ -242,7 +242,7 @@ const Navbar = () => {
                   <div className="option-item">
                     {authContextData?.user &&
                     (authContextData?.user?.role === "user" ||
-                      authContextData?.user?.role === "admin") ? (
+                      ?.user?.role === "admin") ? (
                       <span
                         data-toggle="modal"
                         className="auth-one"
